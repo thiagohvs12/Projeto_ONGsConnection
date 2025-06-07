@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necessidades Cadastradas</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <h1>Necessidades Cadastradas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar Necessidade</a></li>
+                <li><a href="necessidades.html">Ver Necessidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Encontre oportunidades para ajudar</h2>
+            
+            <div class="search-filters">
+                <div class="search-group">
+                    <label for="searchInput">Pesquisar</label>
+                    <input type="text" id="searchInput" placeholder="Digite palavras-chave...">
+                </div>
+                
+                <div class="filter-group">
+                    <label for="filterType">Filtrar por Tipo</label>
+                    <select id="filterType">
+                        <option value="">Todos os tipos</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</option>
+                        <option value="Doação de Roupas">Doação de Roupas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="needs-container" id="needsContainer">
+            <!-- As necessidades serão carregadas dinamicamente aqui -->
+            <p class="no-results">Carregando oportunidades...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma Voluntária Local. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
