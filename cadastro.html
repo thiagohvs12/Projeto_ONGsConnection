@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Necessidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Necessidade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar Necessidade</a></li>
+                <li><a href="necessidades.html">Ver Necessidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Cadastre a necessidade da sua instituição</h2>
+            <form id="necessidadeForm">
+                <div class="form-group">
+                    <label for="nomeInstituicao">Nome da Instituição*</label>
+                    <input type="text" id="nomeInstituicao" name="nomeInstituicao" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoAjuda">Tipo de Ajuda*</label>
+                    <select id="tipoAjuda" name="tipoAjuda" required>
+                        <option value="">Selecione...</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Meio Ambiente">Meio Ambiente</option>
+                        <option value="Doação de Alimentos">Doação de Alimentos</option>
+                        <option value="Doação de Roupas">Doação de Roupas</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tituloNecessidade">Título da Necessidade*</label>
+                    <input type="text" id="tituloNecessidade" name="tituloNecessidade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição Detalhada*</label>
+                    <textarea id="descricao" name="descricao" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cep">CEP*</label>
+                    <input type="text" id="cep" name="cep" required pattern="\d{5}-?\d{3}">
+                    <small>Digite o CEP para preencher automaticamente o endereço</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="rua">Rua*</label>
+                    <input type="text" id="rua" name="rua" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bairro">Bairro*</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidade">Cidade*</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado*</label>
+                    <input type="text" id="estado" name="estado" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contato">Contato (E-mail ou Telefone)*</label>
+                    <input type="text" id="contato" name="contato" required>
+                </div>
+
+                <button type="submit" class="btn">Cadastrar Necessidade</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Plataforma Voluntária Local. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
